@@ -1,0 +1,92 @@
+.links-container {
+    max-width: 1120px;
+    margin: 32px auto 0 auto;
+}
+
+.links-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.links-header svg {
+    margin-right: 14px;
+}
+
+.links-header h1 {
+    color:#fff;
+}
+
+.links-item {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.links-item:last-child { //margin somente no ultimo item 
+    margin-bottom: 18px;
+}
+
+.link{
+    border: 0;
+    width: 100%;
+    min-width: 80%;
+    border-radius: 4px;
+    height: 46px;
+    background-color: rgb(255,255,255, 0.15);
+    margin-right: 14px;
+    display:flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.link svg {
+    margin-right: 14px;
+}
+
+// resolvendo a quebra de linha do text dentro do input
+.link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: cllipsis;
+}
+
+.link-delete {
+    border:none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.empty-text {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+@media(max-width: 850px) {
+    .links-container {
+        width: 80%;
+        padding:5%;
+    }
+
+    .links-container  h1 {
+        font-size: 40px;
+        margin-bottom: 0.8rem;
+    }
+
+    .links-item {
+        width: 100%;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    .link svg {
+        display: none;
+    }
+}
